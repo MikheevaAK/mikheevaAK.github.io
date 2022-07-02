@@ -307,7 +307,6 @@ body {
       height: 74px;
       border: 1px solid $border;
       border-radius: 4px;
-      overflow: hidden;
 
       background-image: url(../images/arrow.alt.down.svg);
       background-position: right 19px top 32px;
@@ -341,22 +340,14 @@ body {
       font-weight: 700;
       border: none;
       background: transparent;
+      appearance: none;
+      cursor: pointer;
 
       &:focus-visible {
         outline: none;
       }
-
-      &::after {
-        content: '';
-        top: 32;
-        left: 19;
-      }
     }
   }
-}
-
-select {
-  appearance: none;
 }
 
 .content-right {

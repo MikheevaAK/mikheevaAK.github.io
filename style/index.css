@@ -269,7 +269,6 @@ body {
   height: 74px;
   border: 1px solid #D6D6D6;
   border-radius: 4px;
-  overflow: hidden;
   background-image: url(../images/arrow.alt.down.svg);
   background-position: right 19px top 32px;
   background-size: 14px 7px;
@@ -297,20 +296,13 @@ body {
   font-weight: 700;
   border: none;
   background: transparent;
-}
-.content-left__select-choice:focus-visible {
-  outline: none;
-}
-.content-left__select-choice::after {
-  content: "";
-  top: 32;
-  left: 19;
-}
-
-select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  cursor: pointer;
+}
+.content-left__select-choice:focus-visible {
+  outline: none;
 }
 
 .content-right {
