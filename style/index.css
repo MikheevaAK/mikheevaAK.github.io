@@ -269,6 +269,7 @@ body {
   height: 74px;
   border: 1px solid #D6D6D6;
   border-radius: 4px;
+  overflow: hidden;
   background-image: url(../images/arrow.alt.down.svg);
   background-position: right 19px top 32px;
   background-size: 14px 7px;

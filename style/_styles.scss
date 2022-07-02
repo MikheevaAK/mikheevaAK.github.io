@@ -307,7 +307,7 @@ body {
       height: 74px;
       border: 1px solid $border;
       border-radius: 4px;
-
+      overflow: hidden;
       background-image: url(../images/arrow.alt.down.svg);
       background-position: right 19px top 32px;
       background-size: 14px 7px;
@@ -390,7 +390,6 @@ body {
   position: fixed;
   left: 0;
   bottom: 0;
-  // height: 119px;
   width: 100%;
   border-top: 1px solid $border;
   background-color: #F2F2F2;
@@ -452,7 +451,6 @@ body {
       color: $blue;
     }
   }
-
 }
 
 .popup {
