@@ -35,13 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     openPopup.addEventListener('click', function() {
         popUp.classList.add('is-active');
-        // document.querySelectorAll('.section').style.overflow = 'hidden';
         hideYScroll(true);
     });
 
     closePopup.addEventListener('click', function() {
         popUp.classList.toggle('is-active');
-        // document.querySelectorAll('.section').style.overflow = 'unset';
         hideYScroll(false);
     });
     
