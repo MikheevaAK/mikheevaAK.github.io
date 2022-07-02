@@ -23,10 +23,9 @@
 
 @media (max-width: 1500px) {
   .content-left {
-    &__item {
-      &--medium {
-        max-width: unset;
-      }
+
+    &__item--medium {
+      height: 200px;
     }
 
     &__select {
@@ -48,12 +47,6 @@
     &__wrap-data {
       flex-direction: column;
       align-items: flex-start;
-    }
-
-    &__item {
-      &--medium {
-        max-width: unset;
-      }
     }
 
     &__list {
@@ -83,6 +76,10 @@
   .content-left {
     width: 100%;
     border-right: none;
+
+    &__item--medium {
+      height: 152px;
+    }
 
     &__swiper-btns {
       position: absolute;
@@ -167,7 +164,7 @@
       padding: 16px 20px;
 
       &--small {
-        width: 123px;
+        width: 125px;
         height: 75px;
 
         .content-left__item-wrap {
