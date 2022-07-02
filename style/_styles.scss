@@ -336,12 +336,17 @@ body {
 
     &-choice {
       position: relative;
+      width: 100%;
       font-family: 'PTRootUI', sans-serif;
       font-weight: 700;
       border: none;
       background: transparent;
       appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
       cursor: pointer;
+      white-space: nowrap;
+      text-overflow: ellipsis;
 
       &:focus-visible {
         outline: none;

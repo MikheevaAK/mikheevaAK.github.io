@@ -293,14 +293,17 @@ body {
 }
 .content-left__select-choice {
   position: relative;
+  width: 100%;
   font-family: "PTRootUI", sans-serif;
   font-weight: 700;
   border: none;
   background: transparent;
+  appearance: none;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
   cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .content-left__select-choice:focus-visible {
   outline: none;
