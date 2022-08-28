@@ -74,4 +74,37 @@ document.addEventListener('DOMContentLoaded', function () {
         let regex = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
         return regex.test(input);
     }
+
+    // burger
+
+    const openBurgerMenuHandler = () => {
+        document.querySelector('#mobile-menu').classList.add('is-active-burger');
+        document.querySelector('body').style.overflow = 'hidden';
+        document.querySelector('.header__menu-mobile').style.overflow = 'auto';
+    }
+
+    const closeBurgerHandler = () => {
+        document.querySelector('#mobile-menu').classList.remove('is-active-burger');
+        document.querySelector('body').style.overflow = 'unset';
+    };
+
+    document.querySelector('#burger').addEventListener('click', (e) => {
+        openBurgerMenuHandler();
+    });
+
+    document.querySelector('#burger--close').addEventListener('click', () => {
+        closeBurgerHandler();
+    });
+
+    document.querySelectorAll('.header__link-mobile').forEach((link) => {
+        link.addEventListener('click', () => {
+            closeBurgerHandler();
+        });
+    });
+
+    document.querySelectorAll('.header__link-mobile').forEach((link) => {
+        link.addEventListener('click', () => {
+            document.querySelector('#mobile-menu').classList.remove('is-active-burger')
+        });
+    });
 });

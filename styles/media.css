@@ -81,7 +81,107 @@
     }
 }
 @media (max-width: 950px) {
+    .container {
+        padding: 0 15px;
+    }
 
+    .title {
+        margin-bottom: 12px;
+        font-size: 28px;
+        line-height: 38.13px;
+    }
+
+    .header {
+        height: 45px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__burger {
+        display: block;
+        margin-right: auto;
+        cursor: pointer;
+    }
+    
+    .header__menu-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .header__menu-mobile.is-active-burger {
+        transform: none;
+    }
+
+    .header__info, 
+    .header__nav-link {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 12.38px;
+    }
+
+    .header__info-phone {
+        margin-bottom: 5px;
+    }
+
+    .hero {
+        min-height: unset;
+    }
+
+    .hero__container {
+        min-height: 356px;
+        padding: 42px 22px;
+    }
+
+    .hero__title {
+        margin-bottom: 13px;
+        font-size: 32px;
+        line-height: 36.8px;
+    }
+
+    .hero__title::after, .hero__list::after {
+        display: none;
+    }
+
+    .hero__list {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .hero__descr {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .hero__item,
+    .hero__descr {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 16.34px;
+    }
+
+    .hero__link {
+        width: unset;
+        height: unset;
+        padding: 13px 18.13px;
+        font-size: 20px;
+        line-height: 20.14px;
+    }
+
+    .price__descr-first,
+    .price__descr-second {
+        margin-bottom: 12px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .price__card {
+        width: 100%;
+    }
+    
     .about__list {
         width: 100%;
         flex-direction: column;
@@ -96,6 +196,7 @@
     }
 
     .joinus__form-wrap {
+        height: 100%;
         flex-direction: column;
     }
 
@@ -103,6 +204,19 @@
         width: 100%;
         margin-right: 0;
         margin-bottom: 55px;
+    }
+
+    .joinus__form-input--comment {
+        width: 100%;
+        height: 253px;
+    }
+
+    .joinus__form-btn {
+        width: 100%;
+        padding: 15px 12px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
     }
 
     .footer__item:not(:last-child) {
