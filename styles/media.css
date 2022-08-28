@@ -1,3 +1,50 @@
-@media (max-width: 1500px) {
-    
+@media (max-width: 1730px) {
+    .joinus__form-input {
+        font-size: 37px;
+    }
+}
+
+@media (max-width: 1550px) {
+    .about__item {
+        width: calc((100% - 70px) / 3);
+    }
+
+    .price__descr-first {
+
+    }
+}
+
+@media (max-width: 1440px) {
+    .title {
+        font-size: 51px;
+    }
+    .about__item-descr {
+        font-size: 27px;
+    }
+
+    .price__card {
+        width: calc((100% - 100px) / 4);
+    }
+
+    .price__card:nth-child(1),
+    .price__card:nth-child(2),
+    .price__card:nth-child(3),
+    .price__card:nth-child(4) {
+      margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .container {
+        padding: 0 50px;
+    }
+
+    .price__card {
+        width: calc((100% - 50px) / 2);
+    }
+
+    .price__card:not(:nth-child(7)),
+    .price__card:not(:nth-child(8)) {
+      margin-bottom: 30px;
+    }
 }

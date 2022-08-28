@@ -102,6 +102,18 @@ svg path {
   font-size: 20px;
   line-height: 24.38px;
   color: var(--color-white);
+  border-bottom: 2px solid transparent;
+  transition: all .2s ease-in-out;
+}
+
+.header__nav-link:hover,
+.header__nav-link:focus {
+  border-color: var(--color-white);
+}
+
+.header__nav-link:active {
+  border-color: var(--color-active);
+  color: var(--color-active);
 }
 
 .header__info {
@@ -215,11 +227,13 @@ svg path {
 }
 
 .button:hover {
-  outline: 3px solid var(--color-active);
+  box-shadow: 0 0 15px var(--color-active);
+  outline: 1px solid var(--color-active);
 }
 
 .button:active {
   background-color: var(--color-active);
+  box-shadow: 0 0 15px var(--color-main);
 }
 
 
@@ -259,6 +273,9 @@ svg path {
 .price__card {
   padding: 25px;
   padding-bottom: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: calc((100% - 210px) / 4);
   border-radius: 38px;
   background-color: var(--color-white);
@@ -363,10 +380,10 @@ svg path {
 .joinus__form::after {
   content: '';
   position: absolute;
-  top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
   background: rgba(0, 0, 0, 0.15) url(../img/cupertino_activity_indicator.gif) center / 50px no-repeat;
   opacity: 0;
   visibility: hidden;
@@ -396,6 +413,7 @@ svg path {
   background-color: #D9D9D9;
   border-radius: 50px;
   border: none;
+  transition: all .2s ease-in-out;
 }
 
 .joinus__form-input._error {
@@ -405,7 +423,8 @@ svg path {
 
 .joinus__form-input:hover,
 .joinus__form-input:focus-visible {
-  outline: 3px solid var(--color-main);
+  /* box-shadow: 0 0 15px var(--color-main); */
+  outline: 1px solid var(--color-active);
 }
 
 .joinus__form-input:active {
@@ -457,5 +476,9 @@ svg path {
 
 .footer__item:not(:last-child) {
   margin-right: 155px;
+}
+
+.footer__link:hover svg path {
+  fill: var(--color-active);
 }
 
